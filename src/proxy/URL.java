@@ -3,6 +3,9 @@
  */
 package proxy;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * To represent a url, including http, port, id
  * 
@@ -15,16 +18,19 @@ public class URL {
   private String http;
   private String res;
   private String host;
-  private String port;
+  private int port = 0;
 
   public URL(String url) {
     int pos = url.indexOf("//");
+    String tmp;
     if (pos != -1) {
       this.http = url.substring(0, pos - 1);
+      tmp = url.substring(pos + 2);
     } else {
-      this.http = "http"; // default http request
+      this.http = "https"; // default http request
+      tmp = url.substring(pos + 1);
     }
-    String tmp = url.substring(pos + 2);
+
     pos = tmp.indexOf('/');
     if (pos != -1) {
       this.res = tmp.substring(pos);
@@ -32,8 +38,10 @@ public class URL {
     }
     pos = tmp.indexOf(':');
     if (pos != -1) {
-      this.port = tmp.substring(pos + 1);
+      this.port = Integer.valueOf(tmp.substring(pos + 1));
       tmp = tmp.substring(0, pos);
+    } else {
+      port = 80;
     }
     this.host = tmp;
 
@@ -70,8 +78,17 @@ public class URL {
   /**
    * @return port
    */
-  public String getPort() {
+  public int getPort() {
     return port;
   }
 
+  public String getIP() {
+    java.security.Security.setProperty("networkaddress.cache.ttl", "30");
+    try {
+      this.ip = InetAddress.getByName(this.host).getHostAddress();
+    } catch (UnknownHostException e) {
+      return "";
+    }
+    return this.ip;
+  }
 }
