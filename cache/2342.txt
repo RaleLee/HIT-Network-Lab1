@@ -1,0 +1,15 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.4.1
+Date: Sat, 26 Oct 2019 04:00:37 GMT
+Content-Type: text/html
+Content-Length: 184
+Connection: close
+Location: https://kxlogo.knet.cn/seallogo.dll?sn=e18122811010876513vpap000000&size=1
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.4.1</center>
+</body>
+</html>

@@ -1,0 +1,14 @@
+HTTP/1.1 400 Bad Request
+Server: JSP3/2.0.14
+Date: Sat, 26 Oct 2019 04:00:26 GMT
+Content-Type: text/html
+Content-Length: 156
+Connection: close
+
+<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>JSP3/2.0.14</center>
+</body>
+</html>

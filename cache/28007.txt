@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript; charset=UTF-8
+Date: Sat, 26 Oct 2019 04:00:22 GMT
+Server: Apache
+Tracecode: 00227860290275637514102612
+Connection: close
+Transfer-Encoding: chunked
+
+12
+[".hit.edu.cn",[]]
+0
+

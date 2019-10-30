@@ -1,0 +1,17 @@
+HTTP/1.1 405 Method Not Allowed
+Server: Tengine
+Date: Sat, 26 Oct 2019 04:00:25 GMT
+Content-Type: text/html
+Content-Length: 261
+Connection: close
+Via: vcache5.cn2149[,0]
+Timing-Allow-Origin: *
+EagleId: 3da2301915720624253087603e
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>405 Method Not Allowed</title></head>
+<body bgcolor="white">
+<h1>405 Method Not Allowed</h1>
+<p>The requested method is not allowed for the URL.<hr/>Powered by Tengine</body>
+</html>

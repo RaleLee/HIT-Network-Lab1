@@ -1,0 +1,17 @@
+HTTP/1.0 400 Bad Request
+Server: GHost
+Mime-Version: 1.0
+Content-Type: text/html
+Content-Length: 216
+Expires: Sat, 26 Oct 2019 04:00:12 GMT
+Date: Sat, 26 Oct 2019 04:00:12 GMT
+Connection: close
+
+<HTML><HEAD>
+<TITLE>Bad Request</TITLE>
+</HEAD><BODY>
+<H1>Bad Request</H1>
+Your browser sent a request that this server could not understand.<P>
+Reference&#32;&#35;7&#46;6e12d23c&#46;1572062412&#46;0
+</BODY>
+</HTML>
